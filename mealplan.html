@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+
+<html lang='en'>
+<head>
+    <meta charset='utf-8'> 
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'> 
+    <meta name='description' content='Mealplan Calculator'> 
+    <meta name='author' content='Chloe Becker'> 
+
+    <link rel='stylesheet' type='text/css' href='./css/mealplan.css'> 
+    <title> Mealplan Calculator </title> 
+    <script href='./js/mealplan.js'></script> 
+</head>
+
+<body>
+	<h1> Mealplan Calculator </h1>
+	<table>
+		<tr>
+			<td>Amount left in mealplan (round to an integer): </td><td><input type='number' id='currentPlan' ></td>
+			<td><p id="mealMsg"></p></td> 
+		</tr>
+			<td>Vacation days (enter 0 for none): </td><td><input type='number' id='minusDays' ></td> 
+			<td><p id="vacayMsg"></p></td> 
+		<tr>
+			<td><button onclick="inputValidate()">Calculate</button> </td><td></td> 
+		</tr>
+		<tr>
+			
+			<td><p id="budgetMsg"></p></td>
+		</tr>
+	</table>
+</body>
+
+
+</html>
