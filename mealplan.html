@@ -8,9 +8,10 @@
     <meta name='description' content='Mealplan Calculator'> 
     <meta name='author' content='Chloe Becker'> 
 
-    <link rel='stylesheet' type='text/css' href='./css/mealplan.css'> 
+    <link rel='stylesheet' type='text/css' href='mealplan.css'>
+    <script src='mealplan.js'></script> 
+ 
     <title> Mealplan Calculator </title> 
-    <script href='./js/mealplan.js'></script> 
 </head>
 
 <body>
@@ -19,6 +20,14 @@
 		<tr>
 			<td>Amount left in mealplan (round to an integer): </td><td><input type='number' id='currentPlan' ></td>
 			<td><p id="mealMsg"></p></td> 
+		</tr>
+		<tr>
+			<td>Start date: <input type='date' id='startDate'></td>
+			<td>End date: <input type='date' id='endDate'></td>
+			<td><button onclick="calculateDays()">Calculate num days</button> </td>
+		</tr>
+		<tr>
+			<td><p id="dayCount"></p></td>
 		</tr>
 			<td>Vacation days (enter 0 for none): </td><td><input type='number' id='minusDays' ></td> 
 			<td><p id="vacayMsg"></p></td> 
